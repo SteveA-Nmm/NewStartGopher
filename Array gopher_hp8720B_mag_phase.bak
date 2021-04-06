@@ -1,11 +1,11 @@
 (saveFormat "7.0")
-(date "Mon 05/Apr/2021 20:22:19 ")
+(date "Mon 05/Apr/2021 19:52:31 ")
 (veerev "9.32.17704.1")
 (platform "PC")
 (execMode v6)
 (prefExecMode v8.5)
 (filterNAN 0)
-(workspaceStackingOrder M.55 M.108 M.99.43 M.99.43.3 M.126 F5 M M.99)
+(workspaceStackingOrder M.99 M.55 M.108 M.99.43 M.99.43.3 M.126 F5 M)
 (sysconfig
 (iodevice "HP8340B"
 (type GPIB-VISA)
@@ -212,6 +212,12 @@
 (upload "outpleas")
 (download "inpuleas")))))
 (SaveCF no)
+(watchterminalslist
+(terminal 0
+(deviceIdNumberStr "M.132.2")
+(input 0)
+(index 1)
+(isimport 0)))
 (device 0 ROOTCONTEXT
 (assemblyRefs
 (assemblyRef 1
@@ -4094,19 +4100,19 @@
 (terminals on)
 (pinCenter 330 430))
 (connect D1:0 D0:0
-(points 2 320 139 320 149))
+(points 2 315 139 315 149))
 (connect D0:0 D2:0
-(points 2 320 273 320 288))
+(points 2 315 273 320 288))
 (connect D1:1 D2:1
-(points 6 406 110 430 110 430 40 40 40 40 320 60 320))
+(points 6 396 110 430 110 430 40 40 40 40 320 70 320))
 (connect I1:1 D2:2
-(points 4 0 259 10 259 10 340 60 340))
+(points 4 0 259 10 259 10 340 70 340))
 (connect D0:1 D2:3
-(points 6 554 220 610 220 610 490 40 490 40 360 60 360))
+(points 6 544 220 610 220 610 490 40 490 40 360 70 360))
 (connect D2:0 D3:0
-(points 2 320 373 320 383))
+(points 2 320 373 325 383))
 (connect D2:1 D3:1
-(points 6 579 340 600 340 600 480 210 480 210 430 233 430)))
+(points 6 569 340 600 340 600 480 210 480 210 430 243 430)))
 (stackingOrder 0 1 3 2))))
 (context 1
 (properties
@@ -11849,17 +11855,17 @@
 (terminals on)
 (pinCenter 465 140))
 (connect I1:1 D0:1
-(points 4 0 138 10 138 10 120 61 120))
+(points 4 0 138 10 138 10 120 71 120))
 (connect I1:1 D0:2
-(points 4 0 138 20 138 20 180 61 180))
+(points 4 0 138 20 138 20 180 71 180))
 (connect D0:1 D1:1
-(points 4 318 150 330 150 330 100 341 100))
+(points 4 308 150 330 150 330 100 351 100))
 (connect D0:1 D1:2
-(points 4 318 150 330 150 330 140 341 140))
+(points 4 308 150 330 150 330 140 351 140))
 (connect D0:1 D1:3
-(points 4 318 150 330 150 330 180 341 180))
+(points 4 308 150 330 150 330 180 351 180))
 (connect D1:1 O1:1
-(points 4 598 140 633 140 633 138 668 138)))
+(points 4 588 140 633 140 633 138 668 138)))
 (stackingOrder 0 1))))
 (configuration
 (connect I1:1 D0:1)
@@ -11926,12 +11932,14 @@
 (connect D14:1 D15:1)
 (connect D12:1 D16:1)))
 (contextCarrier
-(wndOrigin 2 2)
-(wndState res)
+(wndOrigin 2 866)
+(wndRestoredOrigin 2 2)
+(wndRestoredExtent 1324 838)
+(wndState min)
 (active detail)
 (detail
 (extent 1324 838)
-(anchorPt -746 -202)
+(anchorPt -971 307)
 (configuration
 (devCarrierFor 1
 (active open)
@@ -12064,7 +12072,7 @@
 (connect D2:0 D3:0
 (points 2 1160 99 1160 112))
 (connect D11:0 D4:0
-(points 2 1740 89 1740 151))
+(points 2 1740 89 1735 151))
 (connect D10:0 D5:0
 (points 2 1740 -145 1740 -120))
 (connect D5:0 D9:0
@@ -12086,19 +12094,19 @@
 (connect D3:1 D11:3
 (points 4 1281 170 1300 170 1300 80 1690 80))
 (connect D4:0 D12:0
-(points 4 1740 330 1740 350 1650 350 1650 448))
+(points 4 1735 330 1740 350 1650 350 1650 448))
 (connect D15:1 D12:1
-(points 2 1491 520 1521 500))
+(points 2 1491 520 1531 500))
 (connect D15:2 D12:2
-(points 2 1491 540 1521 580))
+(points 2 1491 540 1531 580))
 (connect D13:1 D14:1
-(points 4 1115 530 940 530 940 510 1149 510))
+(points 4 1105 530 940 530 940 510 1159 510))
 (connect D13:0 D14:2
-(points 5 960 595 960 590 940 590 940 550 1149 550))
+(points 5 955 595 960 590 940 590 940 550 1159 550))
 (connect D14:1 D15:1
-(points 4 1371 530 1220 530 1220 530 1389 530))
+(points 4 1361 530 1220 530 1220 530 1389 530))
 (connect D12:1 D16:1
-(points 2 1778 540 1793 530)))
+(points 2 1768 540 1803 530)))
 (stackingOrder 1 3 10 8 9 4 7 6 0 5 11 2 14 13 12 15 16))))
 (device 104 START25
 (properties
@@ -13660,11 +13668,11 @@
 (terminals on)
 (pinCenter 510 130))
 (connect D0:1 D1:1
-(points 4 375 140 390 140 390 110 399 110))
+(points 4 365 140 390 140 390 110 409 110))
 (connect D0:0 D1:2
-(points 7 220 205 220 230 400 230 400 180 390 180 390 150 399 150))
+(points 7 215 205 220 230 400 230 400 180 390 180 390 150 409 150))
 (connect D1:1 O1:1
-(points 4 621 130 640 130 640 135 688 135)))
+(points 4 611 130 640 130 640 135 688 135)))
 (stackingOrder 0 1))))
 (device 127 CONTEXT
 (properties
@@ -13851,7 +13859,7 @@
 (active detail)
 (detail
 (extent 1867 767)
-(anchorPt 304 73)
+(anchorPt -513 -977)
 (configuration
 (devCarrierFor 5
 (active icon)
@@ -14306,11 +14314,11 @@
 (connect D4:1 D49:1
 (points 4 789 940 810 940 810 1020 1324 1020))
 (connect D48:0 D50:0
-(points 2 1380 1080 1400 1163))
+(points 2 1380 1080 1395 1163))
 (connect D53:0 D51:0
-(points 2 1320 1423 1315 1460))
+(points 2 1320 1423 1320 1460))
 (connect D52:1 D51:1
-(points 4 1091 1500 1100 1500 1100 1510 1199 1510)))
+(points 4 1081 1500 1100 1500 1100 1510 1209 1510)))
 (stackingOrder 1 6 9 8 14 15 16 10 3 13 18 19 21 22 23 0 2 5 26 28 7 24 29 27 20
 12 31 30 11 33 37 25 40 38 43 39 42 34 35 36 41 44 17 45 49 48 50 51 52 53 46 47
 4 32))

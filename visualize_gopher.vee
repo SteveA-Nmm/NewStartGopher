@@ -1,0 +1,1473 @@
+(saveFormat "7.0")
+(date "Mon 05/Apr/2021 20:22:16 ")
+(veerev "9.32.17704.1")
+(platform "PC")
+(execMode v6)
+(prefExecMode v8)
+(filterNAN 0)
+(workspaceStackingOrder M.64 M)
+(sysconfig
+(iodevice "HP8340B"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "GPIB0::19::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAddr "GPIB0::19::INSTR")
+(model ""
+(standard 488)))
+(iodevice "newInstrument2"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "GPIB0::19::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAddr "GPIB0::19::INSTR")
+(model ""
+(standard 488)))
+(iodevice "newInstrumentxxx"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "GPIB0::13::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAddr "GPIB0::13::INSTR")
+(model ""
+(standard 488)))
+(iodevice "dvm"
+(type GPIB-VISA)
+(channel 0)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(isLive 0)
+(idFileName "hp3478a.cid")
+(ppAddr "")
+(model "")
+(eoiEnabled 1)
+(model ""
+(standard 488)))
+(iodevice "Hp871xC"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "GPIB0::12::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAddr "GPIB0::12::INSTR")
+(model ""
+(standard 488)))
+(iodevice "NFMeter"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "GPIB0::12::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAddr "GPIB0::12::INSTR")
+(model ""
+(standard 488)))
+(iodevice "hp83650B"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "GPIB0::19::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAddr "GPIB0::19::INSTR")
+(model ""
+(standard 488)))
+(iodevice "PowerMeter"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "GPIB0::13::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAddr "GPIB0::13::INSTR")
+(model ""
+(standard 488)))
+(iodevice "ML2437A"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(isLive 0)
+(ppAddr "GPIB0::13::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAddr "GPIB0::13::INSTR")
+(model ""
+(standard 488)))
+(iodevice "newInstrument"
+(type GPIB-VISA)
+(channel 132)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "GPIB2::8::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAddr "GPIB2::8::INSTR")
+(model ""
+(standard 488.2)))
+(iodevice "newInstrument3"
+(type ASRL)
+(channel 193)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "ASRL3::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAlias "COM3")
+(VISAddr "ASRL3::INSTR")
+(model ""
+(standard 488.2))
+(baudRate 9600)
+(charSize 8)
+(stopBits 1)
+(parity off)
+(handshake off)
+(recvBufferSize 4096))
+(iodevice "nwa"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "GPIB0::16::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAddr "GPIB0::16::INSTR")
+(model ""
+(standard 488)))
+(iodevice "newInstrument4"
+(type GPIB-VISA)
+(channel 0)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(isLive 0)
+(ppAddr "")
+(model "")
+(eoiEnabled 1)
+(model ""
+(standard 488)))
+(iodevice "newInstrument5"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "GPIB0::8::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAddr "GPIB0::8::INSTR")
+(model ""
+(standard 488))))
+(SaveCF no)
+(device 0 ROOTCONTEXT
+(properties
+(variableName Main)
+(variableScope glob)
+(trigMode deg)
+(nextID 65)
+(popupTitleText "Untitled")
+(popupMoveable 1))
+(deviceList
+(device 29 CONTEXT
+(properties
+(name "visualise band2")
+(variableScope cont)
+(trigMode deg)
+(nextID 4)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(input 1
+(name "Rec")
+(optional yes))
+(output 1
+(type data)
+(name "Result")
+(lock constraints)
+(optional yes))
+(output 2
+(type data)
+(name "Result")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 FORMULA
+(properties
+(variableScope cont)
+(expr 2 "\"Rec.band2.\"+port+\".mag\"" ""))
+(interface
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 1 FORMULA
+(properties
+(variableScope cont)
+(expr 2 "\"Rec.band2.\"+port+\".phase\"" ""))
+(interface
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 2 FORMULA
+(properties
+(variableScope cont)
+(expr 1 "Rec.band2.port_3.mag"))
+(interface
+(input 1
+(name "Rec")
+(optional yes))
+(input 2
+(type control)
+(name "Formula")
+(tag "Formula")
+(requires
+(datatype Text))
+(lock name constraints)
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 3 FORMULA
+(properties
+(variableScope cont)
+(expr 1 "Rec.band2.port_3.phase"))
+(interface
+(input 1
+(name "Rec")
+(optional yes))
+(input 2
+(type control)
+(name "Formula")
+(tag "Formula")
+(requires
+(datatype Text))
+(lock name constraints)
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:0 D1:0)
+(connect D1:0 D2:0)
+(connect I1:1 D2:1)
+(connect D0:1 D2:2)
+(connect D2:0 D3:0)
+(connect I1:1 D3:1)
+(connect D1:1 D3:2)
+(connect D2:1 O1:1)
+(connect D3:1 O2:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 932 340)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon)
+(open
+(extent 284 67))
+(terminals on)
+(pinCenter 235 120))
+(devCarrierFor 1
+(active open)
+(icon)
+(open
+(extent 264 67))
+(terminals on)
+(pinCenter 245 230))
+(devCarrierFor 2
+(active open)
+(icon)
+(open
+(extent 145 51))
+(terminals on)
+(pinCenter 725 120))
+(devCarrierFor 3
+(active open)
+(icon)
+(open
+(extent 145 51))
+(terminals on)
+(pinCenter 715 250))
+(connect D0:0 D1:0
+(points 4 250 156 250 160 260 160 260 176))
+(connect D1:0 D2:0
+(points 6 260 266 260 290 470 290 470 50 720 50 720 74))
+(connect I1:1 D2:1
+(points 6 0 169 10 169 10 300 480 300 480 110 580 110))
+(connect D0:1 D2:2
+(points 4 439 120 460 120 460 130 580 130))
+(connect D2:0 D3:0
+(points 4 720 148 720 170 710 170 710 204))
+(connect I1:1 D3:1
+(points 6 0 169 10 169 10 300 480 300 480 240 570 240))
+(connect D1:1 D3:2
+(points 4 439 230 460 230 460 260 570 260))
+(connect D2:1 O1:1
+(points 4 860 120 880 120 880 79 931 79))
+(connect D3:1 O2:1
+(points 4 850 250 870 250 870 259 931 259)))
+(stackingOrder 0 1 2 3))))
+(device 30 CONTEXT
+(properties
+(name "init")
+(variableScope cont)
+(trigMode deg)
+(nextID 2)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(deviceList
+(device 0 DECLVAR
+(properties
+(name "Declare band")
+(scope glob)
+(globalName "band"))
+(implementation
+(value Text
+(data  ""))))
+(device 1 DECLVAR
+(properties
+(name "Declare port")
+(scope glob)
+(globalName "port"))
+(implementation
+(value Text
+(data  ""))))
+(configuration))
+(contextCarrier
+(active detail)
+(detail
+(extent 395 465)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(extent 82 0))
+(open
+(extent 238 119))
+(pinCenter 180 140))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 77 0))
+(open
+(extent 238 119))
+(pinCenter 200 340)))
+(stackingOrder 0 1))))
+(device 31 ENUMCONSTANT
+(properties
+(name "Radio Buttons")
+(variableScope cont)
+(autoTrigger 1)
+(enableEditing 1))
+(interface
+(output 1
+(name "Enum")
+(lock name constraints))
+(output 2
+(name "Ordinal")
+(lock name constraints)))
+(implementation
+(value Enum
+(values
+("port_2" 0)
+("port_3" 1)
+("port_4" 2))
+(data  "port_3"))
+(initValue Text
+(data  "port_2"))))
+(device 38 CONTEXT
+(properties
+(name "visualise band1")
+(variableScope cont)
+(trigMode deg)
+(nextID 4)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(input 1
+(name "Rec")
+(optional yes))
+(output 1
+(type data)
+(name "Result")
+(lock constraints)
+(optional yes))
+(output 2
+(type data)
+(name "Result")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 FORMULA
+(properties
+(variableScope cont)
+(expr 2 "\"Rec.band1.\"+port+\".mag\"" ""))
+(interface
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 1 FORMULA
+(properties
+(variableScope cont)
+(expr 2 "\"Rec.band1.\"+port+\".phase\"" ""))
+(interface
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 2 FORMULA
+(properties
+(variableScope cont)
+(expr 1 "Rec.band1.port_3.mag"))
+(interface
+(input 1
+(name "Rec")
+(optional yes))
+(input 2
+(type control)
+(name "Formula")
+(tag "Formula")
+(requires
+(datatype Text))
+(lock name constraints)
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 3 FORMULA
+(properties
+(variableScope cont)
+(expr 1 "Rec.band1.port_3.phase"))
+(interface
+(input 1
+(name "Rec")
+(optional yes))
+(input 2
+(type control)
+(name "Formula")
+(tag "Formula")
+(requires
+(datatype Text))
+(lock name constraints)
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(configuration
+(connect D0:0 D1:0)
+(connect D1:0 D2:0)
+(connect I1:1 D2:1)
+(connect D0:1 D2:2)
+(connect D2:0 D3:0)
+(connect I1:1 D3:1)
+(connect D1:1 D3:2)
+(connect D2:1 O1:1)
+(connect D3:1 O2:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 932 340)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon)
+(open
+(extent 284 67))
+(terminals on)
+(pinCenter 235 120))
+(devCarrierFor 1
+(active open)
+(icon)
+(open
+(extent 264 67))
+(terminals on)
+(pinCenter 245 230))
+(devCarrierFor 2
+(active open)
+(icon)
+(open
+(extent 145 51))
+(terminals on)
+(pinCenter 725 120))
+(devCarrierFor 3
+(active open)
+(icon)
+(open
+(extent 145 51))
+(terminals on)
+(pinCenter 715 250))
+(connect D0:0 D1:0
+(points 4 250 156 250 160 260 160 260 176))
+(connect D1:0 D2:0
+(points 6 260 266 260 290 470 290 470 50 720 50 720 74))
+(connect I1:1 D2:1
+(points 6 0 169 10 169 10 300 480 300 480 110 580 110))
+(connect D0:1 D2:2
+(points 4 439 120 460 120 460 130 580 130))
+(connect D2:0 D3:0
+(points 4 720 148 720 170 710 170 710 204))
+(connect I1:1 D3:1
+(points 6 0 169 10 169 10 300 480 300 480 240 570 240))
+(connect D1:1 D3:2
+(points 4 439 230 460 230 460 260 570 260))
+(connect D2:1 O1:1
+(points 4 860 120 880 120 880 79 931 79))
+(connect D3:1 O2:1
+(points 4 850 250 870 250 870 259 931 259)))
+(stackingOrder 0 1 2 3))))
+(device 41 YPLOT
+(properties
+(name "XY Trace")
+(variableScope cont))
+(interface
+(input 1
+(name "Trace1")
+(lock constraints)))
+(implementation
+(tracePin 1)
+(graphMode rectangular)))
+(device 42 YPLOT
+(properties
+(name "XY Trace")
+(variableScope cont))
+(interface
+(input 1
+(name "Trace1")
+(lock constraints)))
+(implementation
+(tracePin 1)
+(graphMode rectangular)))
+(device 43 YPLOT
+(properties
+(name "XY Trace")
+(variableScope cont))
+(interface
+(input 1
+(name "Trace1")
+(lock constraints)))
+(implementation
+(tracePin 1)
+(graphMode rectangular)))
+(device 44 YPLOT
+(properties
+(name "XY Trace")
+(variableScope cont))
+(interface
+(input 1
+(name "Trace1")
+(lock constraints)))
+(implementation
+(tracePin 1)
+(graphMode rectangular)))
+(device 45 FORMULA
+(properties
+(variableScope cont)
+(expr 1 "port=a"))
+(interface
+(input 1
+(name "A")
+(optional yes))
+(output 1
+(name "Result")
+(tag "Result")
+(lock name constraints)
+(optional yes))))
+(device 47 FROMDATASET
+(properties
+(variableScope cont)
+(readRecs one)
+(expr 1 "1"))
+(interface
+(input 1
+(type control)
+(name "File Name")
+(requires
+(datatype Text)
+(shape "Scalar"))
+(lock name constraints)
+(optional yes))
+(output 1
+(name "Rec")
+(tag "records")))
+(implementation
+(attr iopath file read
+"C:\\Users\\sapplen\\Documents\\GitHub\\NewStartGopher\\ANT gopher.txt"
+(readTerm "\n")
+(fs " ")
+(eol "\n")
+(multiField fullSyntax)
+(arrayFormat block))))
+(device 48 FILESELECT
+(properties
+(name "File Name Selection")
+(variableScope cont)
+(prompt "Enter File Name:")
+(initialDirectory "C:\\Users\\sapplen\\Documents\\GitHub\\NewStartGopher")
+(initialFile "*.*")
+(dialogMode Reading))
+(interface
+(output 1
+(name "File Name")
+(lock name constraints))
+(output 2
+(name "Cancel")
+(lock name constraints)))
+(implementation))
+(device 49 BREAK
+(properties
+(variableScope cont)))
+(device 50 TOGLOBAL
+(properties
+(name "Set RefCal")
+(variableScope cont)
+(globalName "RefCal"))
+(interface
+(input 1
+(name "Data")
+(tag "Data")
+(lock name))))
+(device 56 FROMGLOBAL
+(properties
+(name "Get RefCal")
+(variableScope cont)
+(globalName "RefCal"))
+(interface
+(output 1
+(name "Data")
+(tag "Data")
+(lock name constraints))))
+(device 57 START25
+(properties
+(variableScope cont)))
+(device 64 CONTEXT
+(properties
+(name "arrayinit")
+(variableScope cont)
+(trigMode deg)
+(nextID 5)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(deviceList
+(device 0 ALLOCATEARRAY
+(properties
+(name "Alloc Real64")
+(variableScope cont))
+(interface
+(output 1
+(name "Array")
+(tag "Array")))
+(implementation
+(numDims 1)
+(dimSizes "1601")
+(type "Real64")
+(initEnum "Lin Ramp")
+(initialValue
+(data  0))
+(from 1)
+(thru 10)))
+(device 1 COLLECTOR
+(properties
+(variableScope cont))
+(interface
+(input 1
+(name "Data")
+(tag "Data"))
+(input 2
+(type trigger)
+(name "XEQ")
+(lock name constraints))
+(output 1
+(name "Array")
+(tag "Array"))))
+(device 2 CONTEXT
+(properties
+(name "port mag phase")
+(variableScope cont)
+(trigMode deg)
+(nextID 4)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(input 1
+(name "Alloc")
+(optional yes))
+(output 1
+(type data)
+(name "Band1")
+(lock constraints)
+(optional yes))
+(output 2
+(type data)
+(name "Band2")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 2 CONTEXT
+(properties
+(name "mag phase")
+(variableScope cont)
+(trigMode deg)
+(nextID 2)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(input 1
+(name "mag")
+(optional yes))
+(output 1
+(type data)
+(name "Record")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 TORECORD
+(properties
+(variableScope cont)
+(outputType scalar))
+(interface
+(input 1
+(name "mag")
+(optional yes))
+(input 2
+(name "phase")
+(optional yes))
+(output 1
+(name "Record"))))
+(device 1 TORECORD
+(properties
+(variableScope cont)
+(outputType scalar))
+(interface
+(input 1
+(name "Port_2")
+(optional yes))
+(input 2
+(name "Port_3")
+(optional yes))
+(input 3
+(name "Port_4")
+(optional yes))
+(output 1
+(name "Record"))))
+(configuration
+(connect I1:1 D0:1)
+(connect I1:1 D0:2)
+(connect D0:1 D1:1)
+(connect D0:1 D1:2)
+(connect D0:1 D1:3)
+(connect D1:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 669 278)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(iconImage "build.icn"))
+(open
+(extent 122 122))
+(terminals on)
+(pinCenter 185 150))
+(devCarrierFor 1
+(active open)
+(icon
+(iconImage "build.icn"))
+(open
+(extent 122 122))
+(terminals on)
+(pinCenter 465 140))
+(connect I1:1 D0:1
+(points 4 0 138 10 138 10 120 61 120))
+(connect I1:1 D0:2
+(points 4 0 138 20 138 20 180 61 180))
+(connect D0:1 D1:1
+(points 4 318 150 330 150 330 100 341 100))
+(connect D0:1 D1:2
+(points 4 318 150 330 150 330 140 341 140))
+(connect D0:1 D1:3
+(points 4 318 150 330 150 330 180 341 180))
+(connect D1:1 O1:1
+(points 4 598 140 633 140 633 138 668 138)))
+(stackingOrder 0 1))))
+(device 3 CONTEXT
+(properties
+(name "mag phase")
+(variableScope cont)
+(trigMode deg)
+(nextID 2)
+(popupTitleText "UserObject")
+(popupMoveable 1))
+(interface
+(input 1
+(name "mag")
+(optional yes))
+(output 1
+(type data)
+(name "Record")
+(lock constraints)
+(optional yes)))
+(deviceList
+(device 0 TORECORD
+(properties
+(variableScope cont)
+(outputType scalar))
+(interface
+(input 1
+(name "mag")
+(optional yes))
+(input 2
+(name "phase")
+(optional yes))
+(output 1
+(name "Record"))))
+(device 1 TORECORD
+(properties
+(variableScope cont)
+(outputType scalar))
+(interface
+(input 1
+(name "Port_2")
+(optional yes))
+(input 2
+(name "Port_3")
+(optional yes))
+(input 3
+(name "Port_4")
+(optional yes))
+(output 1
+(name "Record"))))
+(configuration
+(connect I1:1 D0:1)
+(connect I1:1 D0:2)
+(connect D0:1 D1:1)
+(connect D0:1 D1:2)
+(connect D0:1 D1:3)
+(connect D1:1 O1:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 669 278)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+
+(iconImage "build.icn"))
+(open
+(extent 122 122))
+(terminals on)
+(pinCenter 185 150))
+(devCarrierFor 1
+(active open)
+(icon
+
+(iconImage "build.icn"))
+(open
+(extent 122 122))
+(terminals on)
+(pinCenter 465 140))
+(connect I1:1 D0:1
+(points 4 0 138 10 138 10 120 61 120))
+(connect I1:1 D0:2
+(points 4 0 138 20 138 20 180 61 180))
+(connect D0:1 D1:1
+(points 4 318 150 330 150 330 100 341 100))
+(connect D0:1 D1:2
+(points 4 318 150 330 150 330 140 341 140))
+(connect D0:1 D1:3
+(points 4 318 150 330 150 330 180 341 180))
+(connect D1:1 O1:1
+(points 4 598 140 633 140 633 138 668 138)))
+(stackingOrder 0 1))))
+(configuration
+(connect I1:1 D0:1)
+(connect I1:1 D1:1)
+(connect D0:1 O1:1)
+(connect D1:1 O2:1)))
+(contextCarrier
+(active detail)
+(detail
+(extent 661 569)
+(anchorPt 9 -15)
+(configuration
+(devCarrierFor 2
+(active icon)
+(icon
+(extent 69 15))
+(terminals on)
+(pinCenter 300 140))
+(devCarrierFor 3
+(active icon)
+(icon
+(extent 69 15))
+(terminals on)
+(pinCenter 270 370))
+(connect I1:1 D0:1
+(points 4 -9 299 0 299 0 140 263 140))
+(connect I1:1 D1:1
+(points 2 -9 299 233 370))
+(connect D0:1 O1:1
+(points 4 337 140 360 140 360 159 651 159))
+(connect D1:1 O2:1
+(points 2 307 370 651 439)))
+(stackingOrder 0 1))))
+(device 3 TORECORD
+(properties
+(variableScope cont)
+(outputType scalar))
+(interface
+(input 1
+(name "Band1")
+(optional yes))
+(input 2
+(name "Band2")
+(optional yes))
+(output 1
+(name "Record"))))
+(device 4 TOGLOBAL
+(properties
+(name "Set RefCal")
+(variableScope cont)
+(globalName "RefCal"))
+(interface
+(input 1
+(name "Data")
+(tag "Data")
+(lock name))))
+(configuration
+(connect D0:1 D1:1)
+(connect D0:0 D1:2)
+(connect D1:1 D2:1)
+(connect D2:1 D3:1)
+(connect D2:2 D3:2)
+(connect D3:1 D4:1)))
+(contextCarrier
+(wndOrigin 94 417)
+(wndState res)
+(active detail)
+(detail
+(extent 1294 289)
+(anchorPt 0 0)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon)
+(open
+(extent 226 125))
+(terminals on)
+(pinCenter 210 140))
+(devCarrierFor 1
+(active open)
+(icon
+(extent 56 25))
+(open
+(extent 117 56))
+(terminals on)
+(pinCenter 520 140))
+(devCarrierFor 2
+(active icon)
+(icon
+(extent 97 25))
+(terminals on)
+(pinCenter 700 140))
+(devCarrierFor 3
+(active open)
+(icon
+(iconImage "build.icn"))
+(open
+(extent 122 142))
+(terminals on)
+(pinCenter 905 150))
+(devCarrierFor 4
+(active open)
+(icon
+(extent 64 0))
+(open
+(extent 88 53))
+(terminals on)
+(pinCenter 1150 140))
+(connect D0:1 D1:1
+(points 4 375 140 390 140 390 120 409 120))
+(connect D0:0 D1:2
+(points 5 220 205 220 230 400 230 400 160 409 160))
+(connect D1:1 D2:1
+(points 2 631 140 649 140))
+(connect D2:1 D3:1
+(points 4 751 130 760 130 760 110 781 110))
+(connect D2:2 D3:2
+(points 4 751 150 760 150 760 190 781 190))
+(connect D3:1 D4:1
+(points 2 1038 150 1053 140)))
+(stackingOrder 0 1 2 3 4))))
+(configuration
+(connect D3:0 D0:0)
+(connect D13:1 D0:1)
+(connect D13:0 D1:0)
+(connect D8:0 D3:0)
+(connect D13:1 D3:1)
+(connect D3:1 D4:1)
+(connect D0:1 D5:1)
+(connect D0:2 D6:1)
+(connect D3:2 D7:1)
+(connect D1:0 D8:0)
+(connect D2:1 D8:1)
+(connect D10:0 D9:0)
+(connect D10:1 D9:1)
+(connect D15:0 D10:0)
+(connect D10:2 D11:0)
+(connect D9:0 D12:0)
+(connect D9:1 D12:1)
+(connect D14:0 D15:0))
+(ShowOnExecPanel))
+(contextCarrier
+(wndOrigin -11 6)
+(wndState res)
+(active detail)
+(panel
+(extent 1513 916)
+(drawGrid "on")
+(widget 2 detail
+(relativeOrigin 213 193)
+(PID 4)
+(title off)
+(tabIndex 4)
+(borderStyle flat)
+(extent 134 236)
+(format buttons))
+(widget 4 detail
+(relativeOrigin 460 10)
+(PID 6)
+(title off)
+(tabIndex 5)
+(borderStyle flat)
+(extent 336 291)
+(displayMode 39)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "mag")
+(domainName "18-26.5 band1")
+(Yspacing 1)
+(Xspacing 10000)
+(scaleColor "Dark Gray")
+(show 1)
+(range -10 10 4 linear))
+(domain 0 850 4 linear)
+(trace 0 onScale 0
+(name "Trace1")
+(traceColor "Yellow")
+(lineType 12)
+(pointType 0))
+(markerColor "White"))
+(widget 5 detail
+(relativeOrigin 860 10)
+(PID 7)
+(title off)
+(tabIndex 6)
+(borderStyle flat)
+(extent 336 291)
+(displayMode 39)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "mag")
+(domainName "26-40 band2")
+(Yspacing 1)
+(Xspacing 10000)
+(scaleColor "Dark Gray")
+(show 1)
+(range -10 10 4 linear))
+(domain 200 1600 4 linear)
+(trace 0 onScale 0
+(name "Trace1")
+(traceColor "Yellow")
+(lineType 12)
+(pointType 0))
+(markerColor "White"))
+(widget 6 detail
+(relativeOrigin 860 310)
+(PID 8)
+(title off)
+(tabIndex 7)
+(borderStyle flat)
+(extent 336 291)
+(displayMode 39)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "phase")
+(domainName "26-40 band2")
+(Yspacing 1)
+(Xspacing 10000)
+(scaleColor "Dark Gray")
+(show 1)
+(range -80 80 4 linear))
+(domain 200 1600 4 linear)
+(trace 0 onScale 0
+(name "Trace1")
+(traceColor "Yellow")
+(lineType 12)
+(pointType 0))
+(markerColor "White"))
+(widget 7 detail
+(relativeOrigin 460 310)
+(PID 9)
+(title off)
+(tabIndex 8)
+(borderStyle flat)
+(extent 336 291)
+(displayMode 39)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "phase")
+(domainName "18-26.5 band1")
+(Yspacing 1)
+(Xspacing 10000)
+(scaleColor "Dark Gray")
+(show 1)
+(range -80 80 4 linear))
+(domain 0 850 4 linear)
+(trace 0 onScale 0
+(name "Trace1")
+(traceColor "Yellow")
+(lineType 12)
+(pointType 0))
+(markerColor "White")))
+(detail
+(extent 1513 851)
+(anchorPt -783 -239)
+(configuration
+(devCarrierFor 29
+(active icon)
+(icon
+(extent 108 179))
+(terminals on)
+(pinCenter 1300 1260))
+(devCarrierFor 30
+(active icon)
+(icon
+(extent 84 59))
+(terminals on)
+(pinCenter 1300 870))
+(devCarrierFor 31
+(active open)
+(icon)
+(open
+(extent 134 236)
+(format buttons))
+(pinCenter 1090 1010))
+(devCarrierFor 38
+(active icon)
+(icon
+(extent 96 179))
+(terminals on)
+(pinCenter 1300 1070))
+(devCarrierFor 41
+(active open)
+(icon
+(iconImage "display.icn"))
+(open
+(extent 336 291)
+(displayMode 47)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "mag")
+(domainName "band1")
+(Yspacing 1)
+(Xspacing 10000)
+(scaleColor "Dark Gray")
+(show 1)
+(range -10 10 4 linear))
+(domain 0 850 4 linear)
+(trace 0 onScale 0
+(name "Trace1")
+(traceColor "Yellow")
+(lineType 12)
+(pointType 0))
+(markerColor "White"))
+(pinCenter 1590 930))
+(devCarrierFor 42
+(active open)
+(icon
+(iconImage "display.icn"))
+(open
+(extent 336 291)
+(displayMode 47)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "mag")
+(domainName "band2")
+(Yspacing 1)
+(Xspacing 10000)
+(scaleColor "Dark Gray")
+(show 1)
+(range -10 10 4 linear))
+(domain 200 1600 4 linear)
+(trace 0 onScale 0
+(name "Trace1")
+(traceColor "Yellow")
+(lineType 12)
+(pointType 0))
+(markerColor "White"))
+(pinCenter 1960 940))
+(devCarrierFor 43
+(active open)
+(icon
+(iconImage "display.icn"))
+(open
+(extent 336 291)
+(displayMode 47)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "phase")
+(domainName "band2")
+(Yspacing 1)
+(Xspacing 10000)
+(scaleColor "Dark Gray")
+(show 1)
+(range -90 90 4 linear))
+(domain 200 1600 4 linear)
+(trace 0 onScale 0
+(name "Trace1")
+(traceColor "Yellow")
+(lineType 12)
+(pointType 0))
+(markerColor "White"))
+(pinCenter 1950 1270))
+(devCarrierFor 44
+(active open)
+(icon
+(iconImage "display.icn"))
+(open
+(extent 336 291)
+(displayMode 47)
+(graphType cartesian)
+(gridType grid)
+(scale 0
+(name "phase")
+(domainName "band1")
+(Yspacing 1)
+(Xspacing 10000)
+(scaleColor "Dark Gray")
+(show 1)
+(range -90 90 4 linear))
+(domain 0 850 4 linear)
+(trace 0 onScale 0
+(name "Trace1")
+(traceColor "Yellow")
+(lineType 12)
+(pointType 0))
+(markerColor "White"))
+(pinCenter 1590 1260))
+(devCarrierFor 45
+(active icon)
+(icon
+(extent 50 15))
+(open
+(extent 145 51))
+(terminals on)
+(pinCenter 1300 950))
+(devCarrierFor 47
+(active open)
+(icon)
+(open
+(extent 258 113))
+(terminals on)
+(pinCenter 1885 520))
+(devCarrierFor 48
+(active open)
+(icon)
+(open
+(extent 571 110))
+(terminals on)
+(pinCenter 1200 550))
+(devCarrierFor 49
+(active icon)
+(icon
+(extent 38 15))
+(open)
+(terminals on)
+(pinCenter 1610 700))
+(devCarrierFor 50
+(active open)
+(icon
+(extent 64 0))
+(open
+(extent 88 53))
+(terminals on)
+(pinCenter 2020 310))
+(devCarrierFor 56
+(active open)
+(icon
+(extent 64 0))
+(open
+(extent 88 53))
+(terminals on)
+(pinCenter 1300 780))
+(devCarrierFor 57
+(active open)
+(icon)
+(open
+(extent 51 26))
+(title off)
+(pinCenter 1220 400))
+(devCarrierFor 64
+(active icon)
+(icon
+(extent 51 15))
+(terminals on)
+(pinCenter 1220 440))
+(connect D3:0 D0:0
+(points 2 1300 1162 1300 1168))
+(connect D13:1 D0:1
+(points 10 1396 780 1410 780 1410 820 1400 820 1400 920 1230 920 1230 1070 1220
+1070 1220 1260 1243 1260))
+(connect D13:0 D1:0
+(points 4 1310 809 1310 820 1300 820 1300 838))
+(connect D8:0 D3:0
+(points 2 1300 960 1300 978))
+(connect D13:1 D3:1
+(points 8 1396 780 1410 780 1410 820 1400 820 1400 920 1230 920 1230 1070 1249
+1070))
+(connect D3:1 D4:1
+(points 4 1350 1020 1370 1020 1370 930 1419 930))
+(connect D0:1 D5:1
+(points 12 1356 1210 1390 1210 1390 960 1360 960 1360 930 1200 930 1200 710 1420
+710 1420 730 1780 730 1780 940 1789 940))
+(connect D0:2 D6:1
+(points 8 1356 1310 1390 1310 1390 770 1410 770 1410 740 1770 740 1770 1270 1779
+1270))
+(connect D3:2 D7:1
+(points 4 1350 1120 1380 1120 1380 1260 1419 1260))
+(connect D1:0 D8:0
+(points 2 1300 902 1300 940))
+(connect D2:1 D8:1
+(points 2 1159 950 1272 950))
+(connect D10:0 D9:0
+(points 6 1230 607 1230 630 1600 630 1600 410 1860 410 1860 443))
+(connect D10:1 D9:1
+(points 2 1578 520 1663 520))
+(connect D15:0 D10:0
+(points 2 1220 450 1230 474))
+(connect D10:2 D11:0
+(points 3 1578 580 1610 580 1610 690))
+(connect D9:0 D12:0
+(points 8 1860 579 1860 600 1640 600 1640 420 1810 420 1810 240 2010 240 2010
+263))
+(connect D9:1 D12:1
+(points 6 2056 520 2080 520 2080 420 1900 420 1900 310 1923 310))
+(connect D14:0 D15:0
+(points 2 1220 415 1220 430)))
+(stackingOrder 0 4 7 5 6 1 11 10 2 12 8 3 14 9 15 13))
+(numberFormats
+(realFormat standard)
+(realSigDigits 4)
+(realRadixSpec 4)
+(integerBase decimal))))
