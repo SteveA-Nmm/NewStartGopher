@@ -1,11 +1,11 @@
 (saveFormat "7.0")
-(date "Tue 06/Apr/2021 09:25:01 ")
+(date "Tue 06/Apr/2021 12:34:36 ")
 (veerev "9.32.17704.1")
 (platform "PC")
 (execMode v6)
 (prefExecMode v8.5)
 (filterNAN 0)
-(workspaceStackingOrder M.55 F5 M)
+(workspaceStackingOrder M.99 M.55 F5 M)
 (sysconfig
 (iodevice "HP8340B"
 (type GPIB-VISA)
@@ -229,7 +229,7 @@
 (variableName Main)
 (variableScope glob)
 (trigMode deg)
-(nextID 150)
+(nextID 152)
 (popupTitleText "Untitled")
 (popupMoveable 1)
 (deleteGlobals 0))
@@ -10475,7 +10475,7 @@
 (optional yes)))
 (implementation
 (attr iopath file read
-"C:\\Users\\sapplen\\Documents\\GitHub\\hp8720B_sandbox\\gopher_hp8720B_mag_phase.vee"
+"C:\\Users\\Test\\Documents\\GitHub\\NewStartGopher\\Array gopher_hp8720B_mag_phase.vee"
 (readTerm "\n")
 (fs " ")
 (eol "\n")
@@ -11244,6 +11244,12 @@
 (nextID 48)
 (popupTitleText "UserObject")
 (popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
 (deviceList
 (device 1 NOTE
 (properties
@@ -11628,6 +11634,12 @@
 (nextID 5)
 (popupTitleText "UserObject")
 (popupMoveable 1))
+(interface
+(output 1
+(type data)
+(name "X")
+(lock constraints)
+(optional yes)))
 (deviceList
 (device 0 ALLOCATEARRAY
 (properties
@@ -11922,7 +11934,8 @@
 (connect D1:1 D2:1)
 (connect D2:1 D3:1)
 (connect D2:2 D3:2)
-(connect D3:1 D4:1)))
+(connect D3:1 D4:1)
+(connect D3:1 O1:1)))
 (contextCarrier
 (active detail)
 (detail
@@ -11977,370 +11990,9 @@
 (connect D2:2 D3:2
 (points 4 741 170 760 170 760 210 781 210))
 (connect D3:1 D4:1
-(points 2 1018 170 1068 170)))
-(stackingOrder 0 1 2 4 3))))
-(device 47 CONTEXT
-(properties
-(name "Alloc_Record_ANT")
-(variableScope cont)
-(trigMode deg)
-(nextID 5)
-(popupTitleText "UserObject")
-(popupMoveable 1))
-(deviceList
-(device 0 ALLOCATEARRAY
-(properties
-(name "Alloc Real64")
-(variableScope cont))
-(interface
-(output 1
-(name "Array")
-(tag "Array")))
-(implementation
-(numDims 1)
-(dimSizes "1601")
-(type "Real64")
-(initEnum "Lin Ramp")
-(initialValue
-(data  0))
-(from 1)
-(thru 1601)))
-(device 1 COLLECTOR
-(properties
-(variableScope cont))
-(interface
-(input 1
-(name "Data")
-(tag "Data"))
-(input 2
-(type trigger)
-(name "XEQ")
-(lock name constraints))
-(output 1
-(name "Array")
-(tag "Array"))))
-(device 2 CONTEXT
-(properties
-(name "port mag phase")
-(variableScope cont)
-(trigMode deg)
-(nextID 4)
-(popupTitleText "UserObject")
-(popupMoveable 1))
-(interface
-(input 1
-(name "Alloc")
-(optional yes))
-(output 1
-(type data)
-(name "Band1")
-(lock constraints)
-(optional yes))
-(output 2
-(type data)
-(name "Band2")
-(lock constraints)
-(optional yes)))
-(deviceList
-(device 2 CONTEXT
-(properties
-(name "mag phase")
-(variableScope cont)
-(trigMode deg)
-(nextID 2)
-(popupTitleText "UserObject")
-(popupMoveable 1))
-(interface
-(input 1
-(name "mag")
-(optional yes))
-(output 1
-(type data)
-(name "Record")
-(lock constraints)
-(optional yes)))
-(deviceList
-(device 0 TORECORD
-(properties
-(variableScope cont)
-(outputType scalar))
-(interface
-(input 1
-(name "mag")
-(optional yes))
-(input 2
-(name "phase")
-(optional yes))
-(output 1
-(name "Record"))))
-(device 1 TORECORD
-(properties
-(variableScope cont)
-(outputType scalar))
-(interface
-(input 1
-(name "Port_2")
-(optional yes))
-(input 2
-(name "Port_3")
-(optional yes))
-(input 3
-(name "Port_4")
-(optional yes))
-(output 1
-(name "Record"))))
-(configuration
-(connect I1:1 D0:1)
-(connect I1:1 D0:2)
-(connect D0:1 D1:1)
-(connect D0:1 D1:2)
-(connect D0:1 D1:3)
-(connect D1:1 O1:1)))
-(contextCarrier
-(active detail)
-(detail
-(extent 669 278)
-(anchorPt 0 0)
-(configuration
-(devCarrierFor 0
-(active open)
-(icon
-
-(iconImage "build.icn"))
-(open
-(extent 122 122))
-(terminals on)
-(pinCenter 185 150))
-(devCarrierFor 1
-(active open)
-(icon
-
-(iconImage "build.icn"))
-(open
-(extent 122 122))
-(terminals on)
-(pinCenter 465 140))
-(connect I1:1 D0:1
-(points 4 0 138 10 138 10 120 71 120))
-(connect I1:1 D0:2
-(points 4 0 138 20 138 20 180 71 180))
-(connect D0:1 D1:1
-(points 4 308 150 330 150 330 100 351 100))
-(connect D0:1 D1:2
-(points 4 308 150 330 150 330 140 351 140))
-(connect D0:1 D1:3
-(points 4 308 150 330 150 330 180 351 180))
-(connect D1:1 O1:1
-(points 4 588 140 633 140 633 138 668 138)))
-(stackingOrder 0 1))))
-(device 3 CONTEXT
-(properties
-(name "mag phase")
-(variableScope cont)
-(trigMode deg)
-(nextID 2)
-(popupTitleText "UserObject")
-(popupMoveable 1))
-(interface
-(input 1
-(name "mag")
-(optional yes))
-(output 1
-(type data)
-(name "Record")
-(lock constraints)
-(optional yes)))
-(deviceList
-(device 0 TORECORD
-(properties
-(variableScope cont)
-(outputType scalar))
-(interface
-(input 1
-(name "mag")
-(optional yes))
-(input 2
-(name "phase")
-(optional yes))
-(output 1
-(name "Record"))))
-(device 1 TORECORD
-(properties
-(variableScope cont)
-(outputType scalar))
-(interface
-(input 1
-(name "Port_2")
-(optional yes))
-(input 2
-(name "Port_3")
-(optional yes))
-(input 3
-(name "Port_4")
-(optional yes))
-(output 1
-(name "Record"))))
-(configuration
-(connect I1:1 D0:1)
-(connect I1:1 D0:2)
-(connect D0:1 D1:1)
-(connect D0:1 D1:2)
-(connect D0:1 D1:3)
-(connect D1:1 O1:1)))
-(contextCarrier
-(active detail)
-(detail
-(extent 669 278)
-(anchorPt 0 0)
-(configuration
-(devCarrierFor 0
-(active open)
-(icon
-
-(iconImage "build.icn"))
-(open
-(extent 122 122))
-(terminals on)
-(pinCenter 185 150))
-(devCarrierFor 1
-(active open)
-(icon
-
-(iconImage "build.icn"))
-(open
-(extent 122 122))
-(terminals on)
-(pinCenter 465 140))
-(connect I1:1 D0:1
-(points 4 0 138 10 138 10 120 71 120))
-(connect I1:1 D0:2
-(points 4 0 138 20 138 20 180 71 180))
-(connect D0:1 D1:1
-(points 4 308 150 330 150 330 100 351 100))
-(connect D0:1 D1:2
-(points 4 308 150 330 150 330 140 351 140))
-(connect D0:1 D1:3
-(points 4 308 150 330 150 330 180 351 180))
-(connect D1:1 O1:1
-(points 4 588 140 633 140 633 138 668 138)))
-(stackingOrder 0 1))))
-(configuration
-(connect I1:1 D0:1)
-(connect I1:1 D1:1)
-(connect D0:1 O1:1)
-(connect D1:1 O2:1)))
-(contextCarrier
-(active detail)
-(detail
-(extent 661 569)
-(anchorPt 9 -15)
-(configuration
-(devCarrierFor 2
-(active icon)
-(icon
-(extent 69 15))
-(terminals on)
-(pinCenter 280 300))
-(devCarrierFor 3
-(active icon)
-(icon
-(extent 69 15))
-(terminals on)
-(pinCenter 280 360))
-(connect I1:1 D0:1
-(points 4 -9 299 117 299 117 300 243 300))
-(connect I1:1 D1:1
-(points 4 -9 299 20 299 20 360 243 360))
-(connect D0:1 O1:1
-(points 4 317 300 340 300 340 159 651 159))
-(connect D1:1 O2:1
-(points 4 317 360 340 360 340 439 651 439)))
-(stackingOrder 1 0))))
-(device 3 TORECORD
-(properties
-(variableScope cont)
-(outputType scalar))
-(interface
-(input 1
-(name "Band1")
-(optional yes))
-(input 2
-(name "Band2")
-(optional yes))
-(output 1
-(name "Record"))))
-(device 4 TOGLOBAL
-(properties
-(name "Set SIM")
-(variableScope cont)
-(globalName "SIM"))
-(interface
-(input 1
-(name "Data")
-(tag "Data")
-(lock name))))
-(configuration
-(connect D0:1 D1:1)
-(connect D0:0 D1:2)
-(connect D1:1 D2:1)
-(connect D2:1 D3:1)
-(connect D2:2 D3:2)
-(connect D3:1 D4:1)))
-(contextCarrier
-(active detail)
-(detail
-(extent 1304 309)
-(anchorPt 0 0)
-(configuration
-(devCarrierFor 0
-(active open)
-(icon)
-(open
-(extent 226 125))
-(terminals on)
-(pinCenter 205 140))
-(devCarrierFor 1
-(active open)
-(icon
-(extent 56 25))
-(open
-(extent 117 56))
-(terminals on)
-(pinCenter 510 160))
-(devCarrierFor 2
-(active icon)
-(icon
-(extent 97 25))
-(terminals on)
-(pinCenter 690 160))
-(devCarrierFor 3
-(active open)
-(icon
-(iconImage "build.icn"))
-(open
-(extent 122 142))
-(terminals on)
-(pinCenter 895 170))
-(devCarrierFor 4
-(active open)
-(icon
-(extent 45 0))
-(open
-(extent 88 53))
-(terminals on)
-(pinCenter 1155 170))
-(connect D0:1 D1:1
-(points 2 360 140 409 140))
-(connect D0:0 D1:2
-(points 5 210 205 210 230 380 230 380 180 409 180))
-(connect D1:1 D2:1
-(points 2 611 160 639 160))
-(connect D2:1 D3:1
-(points 4 741 150 760 150 760 130 781 130))
-(connect D2:2 D3:2
-(points 4 741 170 760 170 760 210 781 210))
-(connect D3:1 D4:1
-(points 2 1018 170 1068 170)))
+(points 2 1018 170 1068 170))
+(connect D3:1 O1:1
+(points 6 1018 170 1050 170 1050 220 1250 220 1250 154 1303 154)))
 (stackingOrder 0 1 2 4 3))))
 (configuration
 (connect D2:0 D3:0)
@@ -12356,12 +12008,16 @@
 (connect D2:1 D11:2)
 (connect D3:1 D11:3)
 (connect D4:0 D12:0)
-(connect D12:0 D13:0)))
+(connect D12:1 O1:1)))
 (contextCarrier
+(wndOrigin 2 836)
+(wndRestoredOrigin 2 2)
+(wndRestoredExtent 1324 838)
+(wndState min)
 (active detail)
 (detail
 (extent 1324 838)
-(anchorPt -871 208)
+(anchorPt -811 360)
 (configuration
 (devCarrierFor 1
 (active open)
@@ -12460,12 +12116,6 @@
 (extent 113 15))
 (terminals on)
 (pinCenter 1740 400))
-(devCarrierFor 47
-(active icon)
-(icon
-(extent 113 15))
-(terminals on)
-(pinCenter 1740 450))
 (connect D2:0 D3:0
 (points 2 1160 119 1160 132))
 (connect D11:0 D4:0
@@ -12492,9 +12142,9 @@
 (points 4 1281 190 1300 190 1300 90 1690 90))
 (connect D4:0 D12:0
 (points 2 1740 330 1740 390))
-(connect D12:0 D13:0
-(points 2 1740 410 1740 440)))
-(stackingOrder 3 10 4 5 2 1 6 11 7 0 12 9 8 13))))
+(connect D12:1 O1:1
+(points 4 1799 400 1950 400 1950 58 2134 58)))
+(stackingOrder 3 10 4 5 1 6 11 7 0 9 8 12 2))))
 (device 104 START25
 (properties
 (variableScope cont)))
@@ -14008,7 +13658,15 @@
 (tag "inRecord")
 (requires
 (datatype Record))
-(lock constraints)))
+(lock constraints))
+(input 2
+(type control)
+(name "File Name")
+(requires
+(datatype Text)
+(shape "Scalar"))
+(lock name constraints)
+(optional yes)))
 (implementation
 (attr iopath file write "myFile.txt"
 (readTerm "\n")
@@ -14108,6 +13766,36 @@
 (interface
 (input 1
 (name "Data"))))
+(device 150 FILESELECT
+(properties
+(name "File Name Selection")
+(variableScope cont)
+(prompt "Enter File Name:")
+(initialDirectory "C:\\Users\\Test\\Documents\\GitHub\\NewStartGopher")
+(initialFile "*.*")
+(dialogMode Reading))
+(interface
+(output 1
+(name "File Name")
+(lock name constraints))
+(output 2
+(name "Cancel")
+(lock name constraints)))
+(implementation))
+(device 151 LITERALCONSTANT
+(properties
+(name "Text")
+(variableScope cont)
+(enableEditing 1))
+(interface
+(output 1
+(name "Text")
+(lock name constraints)))
+(implementation
+(value Text
+(data  "hello"))
+(initValue Text
+(data  ""))))
 (configuration
 (connect D25:0 D0:0)
 (connect D0:1 D1:1)
@@ -14147,8 +13835,9 @@
 (connect D39:1 D46:0)
 (connect D4:1 D46:1)
 (connect D45:0 D47:0)
-(connect D50:0 D48:0)
-(connect D49:1 D48:1)
+(connect D58:0 D48:0)
+(connect D32:1 D48:1)
+(connect D58:1 D48:2)
 (connect D17:0 D51:0)
 (connect D17:3 D51:1)
 (connect D51:1 D52:0)
@@ -14157,14 +13846,15 @@
 (connect D51:2 D55:0)
 (connect D54:1 D56:1)
 (connect D55:1 D56:2)
-(connect D56:1 D57:1)))
+(connect D56:1 D57:1)
+(connect D50:0 D58:0)))
 (contextCarrier
 (wndOrigin 3 1)
 (wndState res)
 (active detail)
 (detail
 (extent 1867 767)
-(anchorPt -328 -639)
+(anchorPt -180 -880)
 (configuration
 (devCarrierFor 5
 (active icon)
@@ -14509,7 +14199,7 @@
 (open
 (extent 146 58))
 (terminals on)
-(pinCenter 1145 1350))
+(pinCenter 1150 1350))
 (devCarrierFor 136
 (active open)
 (icon
@@ -14517,14 +14207,14 @@
 (open
 (extent 88 53))
 (terminals on)
-(pinCenter 885 1350))
+(pinCenter 855 1290))
 (devCarrierFor 137
 (active open)
 (icon)
 (open
 (extent 47 22))
 (title off)
-(pinCenter 1140 1250))
+(pinCenter 410 1210))
 (devCarrierFor 138
 (active icon)
 (icon
@@ -14577,6 +14267,19 @@
 (open
 (extent 121 20))
 (pinCenter 1010 770))
+(devCarrierFor 150
+(active open)
+(icon)
+(open
+(extent 437 106))
+(terminals on)
+(pinCenter 410 1340))
+(devCarrierFor 151
+(active open)
+(icon)
+(open
+(extent 174 29))
+(pinCenter 800 1210))
 (connect D25:0 D0:0
 (points 6 350 164 350 180 440 180 440 150 700 150 700 170))
 (connect D0:1 D1:1
@@ -14653,10 +14356,13 @@
 (points 2 769 950 944 950))
 (connect D45:0 D47:0
 (points 2 1000 1020 1000 1053))
-(connect D50:0 D48:0
-(points 2 1140 1263 1140 1300))
-(connect D49:1 D48:1
-(points 2 971 1350 1029 1350))
+(connect D58:0 D48:0
+(points 8 430 1395 430 1420 1280 1420 1280 1280 1150 1280 1150 1290 1130 1290
+1130 1300))
+(connect D32:1 D48:1
+(points 6 406 220 470 220 470 1150 960 1150 960 1330 1004 1330))
+(connect D58:1 D48:2
+(points 4 701 1310 720 1310 720 1370 1004 1370))
 (connect D17:0 D51:0
 (points 2 700 629 700 680))
 (connect D17:3 D51:1
@@ -14675,10 +14381,12 @@
 (connect D55:1 D56:2
 (points 4 1499 760 1520 760 1520 740 1584 740))
 (connect D56:1 D57:1
-(points 6 1615 730 1640 730 1640 800 930 800 930 770 947 770)))
+(points 6 1615 730 1640 730 1640 800 930 800 930 770 947 770))
+(connect D50:0 D58:0
+(points 4 410 1223 410 1240 430 1240 430 1266)))
 (stackingOrder 1 6 9 8 15 16 10 3 13 18 19 21 22 23 0 2 5 26 28 7 24 29 27 20 12
-31 11 33 25 34 44 48 50 35 36 40 43 17 30 51 39 38 42 41 46 45 14 47 49 37 32 53
-54 55 57 52 56 4))
+31 11 33 25 34 44 48 35 36 40 43 17 30 51 39 38 42 41 46 45 14 37 53 54 55 57 52
+56 4 58 59 49 47 32 50))
 (numberFormats
 (realFormat standard)
 (realSigDigits 4)

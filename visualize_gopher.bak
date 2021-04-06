@@ -1,5 +1,5 @@
 (saveFormat "7.0")
-(date "Tue 06/Apr/2021 10:19:30 ")
+(date "Tue 06/Apr/2021 10:24:43 ")
 (veerev "9.32.17704.1")
 (platform "PC")
 (execMode v6)
@@ -297,7 +297,7 @@
 (device 2 FORMULA
 (properties
 (variableScope cont)
-(expr 1 "Rec.band2.port_4.mag"))
+(expr 1 "Rec.band2.port_2.mag"))
 (interface
 (input 1
 (name "Rec")
@@ -318,7 +318,7 @@
 (device 3 FORMULA
 (properties
 (variableScope cont)
-(expr 1 "Rec.band2.port_4.phase"))
+(expr 1 "Rec.band2.port_2.phase"))
 (interface
 (input 1
 (name "Rec")
@@ -480,7 +480,7 @@
 ("port_2" 0)
 ("port_3" 1)
 ("port_4" 2))
-(data  "port_4"))
+(data  "port_2"))
 (initValue Text
 (data  "port_2"))))
 (device 38 CONTEXT
@@ -529,7 +529,7 @@
 (device 2 FORMULA
 (properties
 (variableScope cont)
-(expr 1 "Rec.band1.port_4.mag"))
+(expr 1 "Rec.band1.port_2.mag"))
 (interface
 (input 1
 (name "Rec")
@@ -550,7 +550,7 @@
 (device 3 FORMULA
 (properties
 (variableScope cont)
-(expr 1 "Rec.band1.port_4.phase"))
+(expr 1 "Rec.band1.port_2.phase"))
 (interface
 (input 1
 (name "Rec")
@@ -707,7 +707,7 @@
 (tag "records")))
 (implementation
 (attr iopath file read
-"C:\\Users\\sapplen\\Documents\\GitHub\\NewStartGopher\\SIM_gopher.txt"
+"C:\\Users\\Test\\Documents\\GitHub\\NewStartGopher\\SIM_gopher.txt"
 (readTerm "\n")
 (fs " ")
 (eol "\n")
@@ -1170,22 +1170,22 @@
 (connect D2:0 D18:0))
 (ShowOnExecPanel))
 (contextCarrier
-(wndOrigin -11 6)
+(wndOrigin -27 2)
 (wndState res)
 (active panel)
 (panel
-(extent 1513 916)
+(extent 900 916)
 (drawGrid "on")
 (widget 2 detail
-(relativeOrigin 206 186)
+(relativeOrigin 40 146)
 (PID 4)
 (title off)
 (tabIndex 4)
 (borderStyle flat)
-(extent 134 236)
+(extent 86 236)
 (format buttons))
 (widget 4 detail
-(relativeOrigin 460 10)
+(relativeOrigin 150 10)
 (PID 6)
 (title off)
 (tabIndex 5)
@@ -1210,7 +1210,7 @@
 (pointType 0))
 (markerColor "White"))
 (widget 5 detail
-(relativeOrigin 860 10)
+(relativeOrigin 550 10)
 (PID 7)
 (title off)
 (tabIndex 6)
@@ -1235,7 +1235,7 @@
 (pointType 0))
 (markerColor "White"))
 (widget 6 detail
-(relativeOrigin 860 310)
+(relativeOrigin 550 310)
 (PID 8)
 (title off)
 (tabIndex 7)
@@ -1260,7 +1260,7 @@
 (pointType 0))
 (markerColor "White"))
 (widget 7 detail
-(relativeOrigin 460 310)
+(relativeOrigin 150 310)
 (PID 9)
 (title off)
 (tabIndex 8)
@@ -1285,14 +1285,14 @@
 (pointType 0))
 (markerColor "White"))
 (widget 14 detail
-(relativeOrigin 210 50)
+(relativeOrigin 44 10)
 (PID 10)
 (title off)
 (tabIndex 9)
 (borderStyle none)
 (extent 80 30))
 (widget 16 detail
-(relativeOrigin 420 630)
+(relativeOrigin 110 630)
 (PID 11)
 (title off)
 (tabStop off)
