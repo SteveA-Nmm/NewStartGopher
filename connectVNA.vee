@@ -1,0 +1,101 @@
+(saveFormat "7.0")
+(date "Mon 05/Apr/2021 16:00:30 ")
+(veerev "9.32.17704.1")
+(platform "PC")
+(execMode v6)
+(prefExecMode v8)
+(filterNAN 0)
+(workspaceStackingOrder M)
+(sysconfig
+(iodevice "newInstrument"
+(type GPIB-VISA)
+(channel 130)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "GPIB0::1::INSTR")
+(model "")
+(eoiEnabled 1)
+(VISAddr "GPIB0::1::INSTR")
+(model ""
+(standard 488))))
+(SaveCF no)
+(device 0 ROOTCONTEXT
+(properties
+(variableName Main)
+(variableScope glob)
+(trigMode deg)
+(nextID 3)
+(popupTitleText "Untitled")
+(popupMoveable 1))
+(deviceList
+(device 0 IODEVICE
+(properties
+(name "newInstrument ( @GPIB0::1::INSTR)")
+(variableScope cont)
+(transactions 2 "WRITE TEXT \"*IDN?\" EOL" "READ TEXT x STR"))
+(interface
+(output 1
+(name "x")
+(optional yes)))
+(implementation
+(ioDevType 13)
+(iopath "newInstrument")))
+(device 1 SCROLLINGTEXTDISPLAY
+(properties
+(variableScope cont)
+(logSize 256))
+(interface
+(input 1
+(name "Data"))))
+(device 2 START25
+(properties
+(variableScope cont)))
+(configuration
+(connect D2:0 D0:0)
+(connect D0:1 D1:1)))
+(contextCarrier
+(wndRestoredOrigin 2 2)
+(wndRestoredExtent 702 385)
+(wndState max)
+(active detail)
+(detail
+(extent 1440 839)
+(anchorPt -366 42)
+(configuration
+(devCarrierFor 0
+(active open)
+(icon
+(iconImage "io.icn"))
+(open
+(extent 221 74))
+(terminals on)
+(pinCenter 570 310))
+(devCarrierFor 1
+(active open)
+(icon)
+(open
+(extent 234 176)
+(noformatter))
+(pinCenter 870 310))
+(devCarrierFor 2
+(active open)
+(icon)
+(open
+(extent 47 22))
+(title off)
+(pinCenter 590 210))
+(connect D2:0 D0:0
+(points 4 590 223 590 230 570 230 570 252))
+(connect D0:1 D1:1
+(points 2 713 310 750 310)))
+(stackingOrder 2 0 1))
+(numberFormats
+(realFormat standard)
+(realSigDigits 4)
+(realRadixSpec 4)
+(integerBase decimal))))
