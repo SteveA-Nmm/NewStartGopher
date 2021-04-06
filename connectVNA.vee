@@ -1,5 +1,5 @@
 (saveFormat "7.0")
-(date "Mon 05/Apr/2021 16:00:30 ")
+(date "Tue 06/Apr/2021 08:43:11 ")
 (veerev "9.32.17704.1")
 (platform "PC")
 (execMode v6)
@@ -29,7 +29,7 @@
 (variableName Main)
 (variableScope glob)
 (trigMode deg)
-(nextID 3)
+(nextID 5)
 (popupTitleText "Untitled")
 (popupMoveable 1))
 (deviceList
@@ -55,17 +55,29 @@
 (device 2 START25
 (properties
 (variableScope cont)))
+(device 3 IODEVICE
+(properties
+(name "newInstrument ( @GPIB0::1::INSTR)")
+(variableScope cont)
+(transactions 1 "WRITE TEXT \"PRES\" EOL"))
+(implementation
+(ioDevType 13)
+(iopath "newInstrument")))
+(device 4 START25
+(properties
+(variableScope cont)))
 (configuration
 (connect D2:0 D0:0)
-(connect D0:1 D1:1)))
+(connect D0:1 D1:1)
+(connect D4:0 D3:0)))
 (contextCarrier
 (wndRestoredOrigin 2 2)
 (wndRestoredExtent 702 385)
 (wndState max)
 (active detail)
 (detail
-(extent 1440 839)
-(anchorPt -366 42)
+(extent 694 563)
+(anchorPt -403 -145)
 (configuration
 (devCarrierFor 0
 (active open)
@@ -89,11 +101,28 @@
 (extent 47 22))
 (title off)
 (pinCenter 590 210))
+(devCarrierFor 3
+(active open)
+(icon
+(iconImage "io.icn"))
+(open
+(extent 221 74))
+(terminals on)
+(pinCenter 630 570))
+(devCarrierFor 4
+(active open)
+(icon)
+(open
+(extent 47 22))
+(title off)
+(pinCenter 620 480))
 (connect D2:0 D0:0
 (points 4 590 223 590 230 570 230 570 252))
 (connect D0:1 D1:1
-(points 2 713 310 750 310)))
-(stackingOrder 2 0 1))
+(points 2 713 310 750 310))
+(connect D4:0 D3:0
+(points 4 620 493 620 500 630 500 630 512)))
+(stackingOrder 2 0 1 3 4))
 (numberFormats
 (realFormat standard)
 (realSigDigits 4)
