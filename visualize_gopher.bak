@@ -1,5 +1,5 @@
 (saveFormat "7.0")
-(date "Tue 06/Apr/2021 10:24:43 ")
+(date "Sat 26/Jun/2021 20:14:58 ")
 (veerev "9.32.17704.1")
 (platform "PC")
 (execMode v6)
@@ -297,7 +297,7 @@
 (device 2 FORMULA
 (properties
 (variableScope cont)
-(expr 1 "Rec.band2.port_2.mag"))
+(expr 1 "Rec.band2.port_3.mag"))
 (interface
 (input 1
 (name "Rec")
@@ -318,7 +318,7 @@
 (device 3 FORMULA
 (properties
 (variableScope cont)
-(expr 1 "Rec.band2.port_2.phase"))
+(expr 1 "Rec.band2.port_3.phase"))
 (interface
 (input 1
 (name "Rec")
@@ -480,7 +480,7 @@
 ("port_2" 0)
 ("port_3" 1)
 ("port_4" 2))
-(data  "port_2"))
+(data  "port_3"))
 (initValue Text
 (data  "port_2"))))
 (device 38 CONTEXT
@@ -529,7 +529,7 @@
 (device 2 FORMULA
 (properties
 (variableScope cont)
-(expr 1 "Rec.band1.port_2.mag"))
+(expr 1 "Rec.band1.port_3.mag"))
 (interface
 (input 1
 (name "Rec")
@@ -550,7 +550,7 @@
 (device 3 FORMULA
 (properties
 (variableScope cont)
-(expr 1 "Rec.band1.port_2.phase"))
+(expr 1 "Rec.band1.port_3.phase"))
 (interface
 (input 1
 (name "Rec")
@@ -599,12 +599,13 @@
 (terminals on)
 (pinCenter 245 230))
 (devCarrierFor 2
-(active open)
-(icon)
+(active icon)
+(icon
+(extent 50 25))
 (open
 (extent 145 51))
 (terminals on)
-(pinCenter 725 120))
+(pinCenter 720 120))
 (devCarrierFor 3
 (active open)
 (icon)
@@ -615,22 +616,22 @@
 (connect D0:0 D1:0
 (points 4 250 156 250 160 260 160 260 176))
 (connect D1:0 D2:0
-(points 6 260 266 260 290 470 290 470 50 720 50 720 74))
+(points 6 260 266 260 290 470 290 470 50 720 50 720 105))
 (connect I1:1 D2:1
-(points 6 0 169 10 169 10 300 480 300 480 110 580 110))
+(points 6 0 169 10 169 10 300 480 300 480 110 692 110))
 (connect D0:1 D2:2
-(points 4 439 120 460 120 460 130 580 130))
+(points 4 439 120 460 120 460 130 692 130))
 (connect D2:0 D3:0
-(points 4 720 148 720 170 710 170 710 204))
+(points 4 720 135 720 170 710 170 710 204))
 (connect I1:1 D3:1
 (points 6 0 169 10 169 10 300 480 300 480 240 570 240))
 (connect D1:1 D3:2
 (points 4 439 230 460 230 460 260 570 260))
 (connect D2:1 O1:1
-(points 4 860 120 880 120 880 79 931 79))
+(points 4 747 120 880 120 880 79 931 79))
 (connect D3:1 O2:1
 (points 4 850 250 870 250 870 259 931 259)))
-(stackingOrder 1 2 3 0))))
+(stackingOrder 1 3 0 2))))
 (device 41 YPLOT
 (properties
 (name "XY Trace")
@@ -707,7 +708,7 @@
 (tag "records")))
 (implementation
 (attr iopath file read
-"C:\\Users\\Test\\Documents\\GitHub\\NewStartGopher\\SIM_gopher.txt"
+"C:\\Users\\sapplen\\Desktop\\Gopher\\Gopher sn1002\\Anttena 06262021 1333 sn1002.txt"
 (readTerm "\n")
 (fs " ")
 (eol "\n")
@@ -1170,22 +1171,22 @@
 (connect D2:0 D18:0))
 (ShowOnExecPanel))
 (contextCarrier
-(wndOrigin -27 2)
+(wndOrigin 3 3)
 (wndState res)
 (active panel)
 (panel
-(extent 900 916)
+(extent 865 690)
 (drawGrid "on")
 (widget 2 detail
-(relativeOrigin 40 146)
+(relativeOrigin 109 603)
 (PID 4)
 (title off)
 (tabIndex 4)
 (borderStyle flat)
-(extent 86 236)
+(extent 66 66)
 (format buttons))
 (widget 4 detail
-(relativeOrigin 150 10)
+(relativeOrigin 106 10)
 (PID 6)
 (title off)
 (tabIndex 5)
@@ -1201,7 +1202,7 @@
 (Xspacing 10000)
 (scaleColor "Dark Gray")
 (show 1)
-(range -10 10 4 linear))
+(range -1 2 4 linear))
 (domain 0 850 4 linear)
 (trace 0 onScale 0
 (name "Trace1")
@@ -1210,7 +1211,7 @@
 (pointType 0))
 (markerColor "White"))
 (widget 5 detail
-(relativeOrigin 550 10)
+(relativeOrigin 499 3)
 (PID 7)
 (title off)
 (tabIndex 6)
@@ -1226,7 +1227,7 @@
 (Xspacing 10000)
 (scaleColor "Dark Gray")
 (show 1)
-(range -10 10 4 linear))
+(range -1 2 4 linear))
 (domain 200 1600 4 linear)
 (trace 0 onScale 0
 (name "Trace1")
@@ -1235,7 +1236,7 @@
 (pointType 0))
 (markerColor "White"))
 (widget 6 detail
-(relativeOrigin 550 310)
+(relativeOrigin 506 310)
 (PID 8)
 (title off)
 (tabIndex 7)
@@ -1260,7 +1261,7 @@
 (pointType 0))
 (markerColor "White"))
 (widget 7 detail
-(relativeOrigin 150 310)
+(relativeOrigin 106 310)
 (PID 9)
 (title off)
 (tabIndex 8)
@@ -1276,7 +1277,7 @@
 (Xspacing 10000)
 (scaleColor "Dark Gray")
 (show 1)
-(range -80 80 4 linear))
+(range -60 60 4 linear))
 (domain 0 850 4 linear)
 (trace 0 onScale 0
 (name "Trace1")
@@ -1285,23 +1286,23 @@
 (pointType 0))
 (markerColor "White"))
 (widget 14 detail
-(relativeOrigin 44 10)
+(relativeOrigin 0 10)
 (PID 10)
 (title off)
 (tabIndex 9)
 (borderStyle none)
 (extent 80 30))
 (widget 16 detail
-(relativeOrigin 110 630)
+(relativeOrigin 196 610)
 (PID 11)
 (title off)
 (tabStop off)
 (tabIndex 10)
 (borderStyle flat)
-(extent 766 26)))
+(extent 646 36)))
 (detail
 (extent 1513 851)
-(anchorPt -358 -396)
+(anchorPt -859 -624)
 (configuration
 (devCarrierFor 29
 (active icon)
@@ -1344,7 +1345,7 @@
 (Xspacing 10000)
 (scaleColor "Dark Gray")
 (show 1)
-(range -10 10 4 linear))
+(range 0 25 4 linear))
 (domain 0 850 4 linear)
 (trace 0 onScale 0
 (name "Trace1")
@@ -1369,7 +1370,7 @@
 (Xspacing 10000)
 (scaleColor "Dark Gray")
 (show 1)
-(range -10 10 4 linear))
+(range 0.8500000000000001 1.3 4 linear))
 (domain 200 1600 4 linear)
 (trace 0 onScale 0
 (name "Trace1")
@@ -1550,7 +1551,7 @@
 (points 2 1578 520 1750 630))
 (connect D2:0 D18:0
 (points 2 1090 1130 1130 1454)))
-(stackingOrder 4 7 5 6 11 14 10 2 13 0 15 8 3 12 9 17 18 16 1))
+(stackingOrder 7 6 11 14 10 13 0 15 8 12 9 17 18 16 1 2 4 3 5))
 (numberFormats
 (realFormat standard)
 (realSigDigits 4)

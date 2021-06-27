@@ -1,5 +1,5 @@
 (saveFormat "7.0")
-(date "Tue 06/Apr/2021 10:30:42 ")
+(date "Sun 27/Jun/2021 13:53:34 ")
 (veerev "9.32.17704.1")
 (platform "PC")
 (execMode v6)
@@ -297,7 +297,7 @@
 (device 2 FORMULA
 (properties
 (variableScope cont)
-(expr 1 "Rec.band2.port_3.mag"))
+(expr 1 "Rec.band2.port_4.mag"))
 (interface
 (input 1
 (name "Rec")
@@ -318,7 +318,7 @@
 (device 3 FORMULA
 (properties
 (variableScope cont)
-(expr 1 "Rec.band2.port_3.phase"))
+(expr 1 "Rec.band2.port_4.phase"))
 (interface
 (input 1
 (name "Rec")
@@ -480,7 +480,7 @@
 ("port_2" 0)
 ("port_3" 1)
 ("port_4" 2))
-(data  "port_3"))
+(data  "port_4"))
 (initValue Text
 (data  "port_2"))))
 (device 38 CONTEXT
@@ -529,7 +529,7 @@
 (device 2 FORMULA
 (properties
 (variableScope cont)
-(expr 1 "Rec.band1.port_3.mag"))
+(expr 1 "Rec.band1.port_4.mag"))
 (interface
 (input 1
 (name "Rec")
@@ -550,7 +550,7 @@
 (device 3 FORMULA
 (properties
 (variableScope cont)
-(expr 1 "Rec.band1.port_3.phase"))
+(expr 1 "Rec.band1.port_4.phase"))
 (interface
 (input 1
 (name "Rec")
@@ -599,12 +599,13 @@
 (terminals on)
 (pinCenter 245 230))
 (devCarrierFor 2
-(active open)
-(icon)
+(active icon)
+(icon
+(extent 50 25))
 (open
 (extent 145 51))
 (terminals on)
-(pinCenter 725 120))
+(pinCenter 720 120))
 (devCarrierFor 3
 (active open)
 (icon)
@@ -615,22 +616,22 @@
 (connect D0:0 D1:0
 (points 4 250 156 250 160 260 160 260 176))
 (connect D1:0 D2:0
-(points 6 260 266 260 290 470 290 470 50 720 50 720 74))
+(points 6 260 266 260 290 470 290 470 50 720 50 720 105))
 (connect I1:1 D2:1
-(points 6 0 169 10 169 10 300 480 300 480 110 580 110))
+(points 6 0 169 10 169 10 300 480 300 480 110 692 110))
 (connect D0:1 D2:2
-(points 4 439 120 460 120 460 130 580 130))
+(points 4 439 120 460 120 460 130 692 130))
 (connect D2:0 D3:0
-(points 4 720 148 720 170 710 170 710 204))
+(points 4 720 135 720 170 710 170 710 204))
 (connect I1:1 D3:1
 (points 6 0 169 10 169 10 300 480 300 480 240 570 240))
 (connect D1:1 D3:2
 (points 4 439 230 460 230 460 260 570 260))
 (connect D2:1 O1:1
-(points 4 860 120 880 120 880 79 931 79))
+(points 4 747 120 880 120 880 79 931 79))
 (connect D3:1 O2:1
 (points 4 850 250 870 250 870 259 931 259)))
-(stackingOrder 1 2 3 0))))
+(stackingOrder 1 3 0 2))))
 (device 41 YPLOT
 (properties
 (name "XY Trace")
@@ -707,7 +708,7 @@
 (tag "records")))
 (implementation
 (attr iopath file read
-"C:\\Users\\Test\\Documents\\GitHub\\NewStartGopher\\SIM_gopher.txt"
+"C:\\Users\\sapplen\\Desktop\\Gopher\\Gopher sn1002\\SIM 06262021 1343 sn1002.txt"
 (readTerm "\n")
 (fs " ")
 (eol "\n")
@@ -1177,7 +1178,7 @@
 (extent 865 690)
 (drawGrid "on")
 (widget 2 detail
-(relativeOrigin 109 603)
+(relativeOrigin 102 596)
 (PID 4)
 (title off)
 (tabIndex 4)
@@ -1201,7 +1202,7 @@
 (Xspacing 10000)
 (scaleColor "Dark Gray")
 (show 1)
-(range -10 10 4 linear))
+(range -1 2 4 linear))
 (domain 0 850 4 linear)
 (trace 0 onScale 0
 (name "Trace1")
@@ -1226,7 +1227,7 @@
 (Xspacing 10000)
 (scaleColor "Dark Gray")
 (show 1)
-(range -10 10 4 linear))
+(range -1 2 4 linear))
 (domain 200 1600 4 linear)
 (trace 0 onScale 0
 (name "Trace1")
@@ -1251,7 +1252,7 @@
 (Xspacing 10000)
 (scaleColor "Dark Gray")
 (show 1)
-(range -80 80 4 linear))
+(range -180 80 4 linear))
 (domain 200 1600 4 linear)
 (trace 0 onScale 0
 (name "Trace1")
@@ -1276,7 +1277,7 @@
 (Xspacing 10000)
 (scaleColor "Dark Gray")
 (show 1)
-(range -80 80 4 linear))
+(range -180 80 4 linear))
 (domain 0 850 4 linear)
 (trace 0 onScale 0
 (name "Trace1")
@@ -1301,7 +1302,7 @@
 (extent 646 36)))
 (detail
 (extent 1513 851)
-(anchorPt -592 -623)
+(anchorPt -859 -624)
 (configuration
 (devCarrierFor 29
 (active icon)
@@ -1344,7 +1345,7 @@
 (Xspacing 10000)
 (scaleColor "Dark Gray")
 (show 1)
-(range -10 10 4 linear))
+(range 0 25 4 linear))
 (domain 0 850 4 linear)
 (trace 0 onScale 0
 (name "Trace1")
@@ -1369,7 +1370,7 @@
 (Xspacing 10000)
 (scaleColor "Dark Gray")
 (show 1)
-(range -10 10 4 linear))
+(range 0.8500000000000001 1.3 4 linear))
 (domain 200 1600 4 linear)
 (trace 0 onScale 0
 (name "Trace1")
@@ -1510,15 +1511,15 @@
 (connect D3:0 D0:0
 (points 2 1300 1162 1300 1168))
 (connect D13:1 D0:1
-(points 6 1176 690 1210 690 1210 1070 1220 1070 1220 1260 1251 1260))
+(points 6 1186 690 1210 690 1210 1070 1220 1070 1220 1260 1251 1260))
 (connect D13:0 D1:0
-(points 4 1095 719 1100 730 1090 730 1090 748))
+(points 4 1100 719 1100 730 1090 730 1090 748))
 (connect D1:0 D2:0
 (points 2 1090 812 1090 871))
 (connect D8:0 D3:0
 (points 2 1300 960 1300 978))
 (connect D13:1 D3:1
-(points 4 1176 690 1210 690 1210 1070 1251 1070))
+(points 4 1186 690 1210 690 1210 1070 1251 1070))
 (connect D3:1 D4:1
 (points 4 1349 1020 1370 1020 1370 930 1419 930))
 (connect D0:1 D5:1
@@ -1533,24 +1534,24 @@
 (connect D2:1 D8:1
 (points 2 1159 950 1272 950))
 (connect D10:0 D9:0
-(points 6 1220 607 1230 630 1600 630 1600 420 1860 420 1870 443))
+(points 6 1230 607 1230 630 1600 630 1600 420 1860 420 1860 443))
 (connect D10:1 D9:1
-(points 2 1558 520 1683 520))
+(points 2 1578 520 1663 520))
 (connect D15:0 D10:0
-(points 4 1220 450 1220 460 1230 460 1220 474))
+(points 4 1220 450 1220 460 1230 460 1230 474))
 (connect D10:2 D11:0
-(points 3 1558 580 1610 580 1610 690))
+(points 3 1578 580 1610 580 1610 690))
 (connect D9:1 D12:1
-(points 4 2056 520 2080 520 2080 540 2143 540))
+(points 4 2056 520 2080 520 2080 540 2133 540))
 (connect D14:0 D15:0
 (points 2 1220 415 1220 430))
 (connect D18:1 D16:1
-(points 2 1240 1500 1360 1510))
+(points 2 1250 1500 1360 1510))
 (connect D10:1 D17:1
-(points 2 1558 520 1750 630))
+(points 2 1578 520 1750 630))
 (connect D2:0 D18:0
-(points 2 1090 1130 1125 1454)))
-(stackingOrder 4 7 5 6 11 14 10 13 0 15 8 3 12 9 17 18 16 1 2))
+(points 2 1090 1130 1130 1454)))
+(stackingOrder 7 6 11 14 10 13 0 15 8 12 9 17 18 16 1 2 4 3 5))
 (numberFormats
 (realFormat standard)
 (realSigDigits 4)
