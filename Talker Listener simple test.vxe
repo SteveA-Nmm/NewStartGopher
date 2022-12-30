@@ -1,0 +1,88 @@
+(saveFormat "7.0")
+(date "Wed 12/Jan/2022 10:03:23 ")
+(veerev "9.32.17704.1")
+(platform "PC")
+(execMode v6)
+(prefExecMode v8)
+(filterNAN 0)
+(sysconfig
+(iodevice "8720B"
+(type GPIB-VISA)
+(channel 132)
+(readTerm "\n")
+(fs ",")
+(eol "\n")
+(multiField dataOnly)
+(arrayFormat linear)
+(timeout 5)
+(byteOrder 0)
+(ppAddr "GPIB2::18::INSTR")
+(ppquery "N")
+(ppreset "N")
+(model "")
+(eoiEnabled 1)
+(VISAddr "GPIB2::18::INSTR")
+(model ""
+(standard 488))))
+(SaveCF no)
+(device 0 ROOTCONTEXT
+(properties
+(variableName Main)
+(variableScope glob)
+(locked 1)
+(trigMode deg)
+(nextID 3)
+(popupTitleText "Untitled")
+(popupMoveable 1)
+(deleteGlobals 0))
+(deviceList
+(device 0 IODEVICE
+(properties
+(name "8720B ( @GPIB2::18::INSTR)")
+(variableScope cont)
+(transactions 2 "WRITE TEXT \"*IDN?\" EOL" "READ TEXT x STR"))
+(interface
+(output 1
+(name "x")
+(optional yes)))
+(implementation
+(ioDevType 13)
+(iopath "8720B")))
+(device 1 TEXTDISPLAY
+(properties
+(variableScope cont))
+(interface
+(input 1
+(name "Data"))))
+(device 2 START25
+(properties
+(variableScope cont)))
+(configuration
+(connect D2:0 D0:0)
+(connect D0:1 D1:1))
+(ShowOnExecPanel))
+(contextCarrier
+(active panel)
+(panel
+(extent 1058 682)
+(drawGrid "on")
+(widget 1 detail
+(relativeOrigin 350 280)
+(PID 0)
+(title off)
+(tabStop off)
+(tabIndex 0)
+(borderStyle flat)
+(extent 334 76))
+(widget 2 detail
+(relativeOrigin 470 210)
+(PID 1)
+(title off)
+(tabIndex 1)
+(borderStyle none)
+(extent 51 26)))
+(numberFormats
+(realFormat standard)
+(realSigDigits 4)
+(realRadixSpec 4)
+(integerBase decimal))))
